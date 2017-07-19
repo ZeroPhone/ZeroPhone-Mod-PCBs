@@ -1,0 +1,394 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:esp12_1button_6leds-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U1
+U 1 1 596E53C6
+P 6000 2550
+F 0 "U1" H 6000 2450 50  0000 C CNN
+F 1 "ESP-12E" H 6000 2650 50  0000 C CNN
+F 2 "footprints:ESP12_BASE" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 596E57C4
+P 5750 3600
+F 0 "D1" H 5750 3700 50  0000 C CNN
+F 1 "LED" H 5900 3550 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 5750 3600 50  0001 C CNN
+F 3 "" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 596E588F
+P 5850 4000
+F 0 "D2" H 5850 4100 50  0000 C CNN
+F 1 "LED" H 6000 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 5850 4000 50  0001 C CNN
+F 3 "" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 596E58B6
+P 5950 4400
+F 0 "D3" H 5950 4500 50  0000 C CNN
+F 1 "LED" H 6150 4350 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 596E59FC
+P 6050 3600
+F 0 "D4" H 6050 3700 50  0000 C CNN
+F 1 "LED" H 6200 3550 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6050 3600 50  0001 C CNN
+F 3 "" H 6050 3600 50  0001 C CNN
+	1    6050 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 596E5A02
+P 6150 4000
+F 0 "D5" H 6150 4100 50  0000 C CNN
+F 1 "LED" H 6350 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6150 4000 50  0001 C CNN
+F 3 "" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 596E5A08
+P 6250 4400
+F 0 "D6" H 6250 4500 50  0000 C CNN
+F 1 "LED" H 6450 4350 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6250 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 596E5A19
+P 5750 4700
+F 0 "R2" V 5750 4650 50  0000 L CNN
+F 1 "10K" V 5700 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5750 4700 50  0001 C CNN
+F 3 "" H 5750 4700 50  0001 C CNN
+	1    5750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 596E5ADF
+P 5850 4700
+F 0 "R3" V 5850 4650 50  0000 L CNN
+F 1 "10K" V 5800 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5850 4700 50  0001 C CNN
+F 3 "" H 5850 4700 50  0001 C CNN
+	1    5850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 596E5B98
+P 5950 4700
+F 0 "R4" V 5950 4650 50  0000 L CNN
+F 1 "10K" V 5900 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5950 4700 50  0001 C CNN
+F 3 "" H 5950 4700 50  0001 C CNN
+	1    5950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 596E5C05
+P 6050 4700
+F 0 "R5" V 6050 4650 50  0000 L CNN
+F 1 "10K" V 6000 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6050 4700 50  0001 C CNN
+F 3 "" H 6050 4700 50  0001 C CNN
+	1    6050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 596E5C0B
+P 6150 4700
+F 0 "R6" V 6150 4650 50  0000 L CNN
+F 1 "10K" V 6100 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6150 4700 50  0001 C CNN
+F 3 "" H 6150 4700 50  0001 C CNN
+	1    6150 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 596E5C11
+P 6250 4700
+F 0 "R7" V 6250 4650 50  0000 L CNN
+F 1 "10K" V 6200 4450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6250 4700 50  0001 C CNN
+F 3 "" H 6250 4700 50  0001 C CNN
+	1    6250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3750 5750 4600
+Wire Wire Line
+	5850 3450 5850 3850
+Wire Wire Line
+	5950 3450 5950 4250
+Wire Wire Line
+	5950 4550 5950 4600
+Wire Wire Line
+	5850 4150 5850 4600
+Wire Wire Line
+	6050 3750 6050 4600
+Wire Wire Line
+	6150 3450 6150 3850
+Wire Wire Line
+	6150 4150 6150 4600
+Wire Wire Line
+	6250 4550 6250 4600
+Wire Wire Line
+	6250 3450 6250 4250
+$Comp
+L GND #PWR01
+U 1 1 596E600B
+P 6900 2950
+F 0 "#PWR01" H 6900 2700 50  0001 C CNN
+F 1 "GND" V 6900 2750 50  0000 C CNN
+F 2 "" H 6900 2950 50  0001 C CNN
+F 3 "" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 596E62F5
+P 6000 5050
+F 0 "#PWR02" H 6000 4800 50  0001 C CNN
+F 1 "GND" H 6000 4900 50  0000 C CNN
+F 2 "" H 6000 5050 50  0001 C CNN
+F 3 "" H 6000 5050 50  0001 C CNN
+	1    6000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4800 5750 5050
+Wire Wire Line
+	5750 5050 6250 5050
+Wire Wire Line
+	6250 5050 6250 4800
+Connection ~ 6000 5050
+Wire Wire Line
+	6150 4800 6150 5050
+Connection ~ 6150 5050
+Wire Wire Line
+	6050 4800 6050 5050
+Connection ~ 6050 5050
+Wire Wire Line
+	5950 4800 5950 5050
+Connection ~ 5950 5050
+Wire Wire Line
+	5850 4800 5850 5050
+Connection ~ 5850 5050
+$Comp
+L SW_Push SW1
+U 1 1 596E67C5
+P 4400 3650
+F 0 "SW1" H 4450 3750 50  0000 L CNN
+F 1 "SW_Push" H 4400 3590 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVQP7C" H 4400 3850 50  0001 C CNN
+F 3 "" H 4400 3850 50  0001 C CNN
+	1    4400 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 596E6918
+P 4400 3900
+F 0 "#PWR03" H 4400 3650 50  0001 C CNN
+F 1 "GND" H 4400 3750 50  0000 C CNN
+F 2 "" H 4400 3900 50  0001 C CNN
+F 3 "" H 4400 3900 50  0001 C CNN
+	1    4400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 596E6A1F
+P 4400 3250
+F 0 "R1" V 4400 3200 50  0000 L CNN
+F 1 "10K" V 4300 3200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4400 3250 50  0001 C CNN
+F 3 "" H 4400 3250 50  0001 C CNN
+	1    4400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 596E6AD5
+P 4400 3050
+F 0 "#PWR04" H 4400 2900 50  0001 C CNN
+F 1 "+3.3V" H 4400 3190 50  0000 C CNN
+F 2 "" H 4400 3050 50  0001 C CNN
+F 3 "" H 4400 3050 50  0001 C CNN
+	1    4400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3050 4400 3150
+Wire Wire Line
+	4400 3350 4400 3450
+Wire Wire Line
+	4400 3850 4400 3900
+Connection ~ 4400 3400
+Wire Wire Line
+	4600 2450 5100 2450
+$Comp
+L +3.3V #PWR05
+U 1 1 596E73BE
+P 5100 2950
+F 0 "#PWR05" H 5100 2800 50  0001 C CNN
+F 1 "+3.3V" V 5100 3200 50  0000 C CNN
+F 2 "" H 5100 2950 50  0001 C CNN
+F 3 "" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3400 4600 3400
+Wire Wire Line
+	4600 3400 4600 2450
+NoConn ~ 5100 2250
+NoConn ~ 5100 2350
+NoConn ~ 5100 2550
+NoConn ~ 5100 2650
+NoConn ~ 5100 2750
+NoConn ~ 5100 2850
+NoConn ~ 6900 2250
+NoConn ~ 6900 2350
+NoConn ~ 6900 2450
+NoConn ~ 6900 2550
+NoConn ~ 6900 2650
+NoConn ~ 6900 2750
+NoConn ~ 6900 2850
+$EndSCHEMATC
