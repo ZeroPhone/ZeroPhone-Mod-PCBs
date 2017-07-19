@@ -6,6 +6,7 @@
 *.bck
 *.kicad_pcb-bak
 *~
+_saved_*
 _autosave-*
 *.tmp
 
@@ -17,5 +18,6 @@ _autosave-*
 *.ses
 
 # Exported BOM files
-*.xml
-*.csv
+# *.xml
+# *.csv
+Thumbs.db
