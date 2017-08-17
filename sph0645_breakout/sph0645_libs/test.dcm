@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+$ENDCMP
+#
+$CMP CP
+D Polarised capacitor
+$ENDCMP
+#
+$CMP Crystal_3p
+D muRata Ceramic Resonators
+$ENDCMP
+#
+$CMP GDT
+D GAS DISCHARGE TUBE
+$ENDCMP
+#
+$CMP MIC_MEMS_4P
+D knowles microphone
+$ENDCMP
+#
+$CMP MIC_MEMS_4P_A
+D knowles microphone
+$ENDCMP
+#
+$CMP MIC_MEMS_I2S
+D knowles I2S microphone
+$ENDCMP
+#
+$CMP MIC_MP34DT01
+D ST MEMS audio sensor omnidirectional digital microphone
+$ENDCMP
+#
+$CMP R
+D Resistor
+$ENDCMP
+#
+$CMP USBLC6-2
+D ESD protection
+$ENDCMP
+#
+#End Doc Library

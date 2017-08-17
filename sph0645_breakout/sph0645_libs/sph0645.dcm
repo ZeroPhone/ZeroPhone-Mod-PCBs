@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC_MEMS_I2S
+D knowles I2S microphone
+$ENDCMP
+#
+#End Doc Library
