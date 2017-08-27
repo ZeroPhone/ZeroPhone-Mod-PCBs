@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 25LC_EEPROM
+D External EEPROM with SPI interface in 8-pin package
+K EEPROM memory SPI serial
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf
+$ENDCMP
+#
+$CMP AT25_EEPROM
+D Atmel serial EEPROM with SPI interface
+K serial EEPROM memory Atmel 
+F http://www.atmel.com/products/Memories/serial/spi.aspx
+$ENDCMP
+#
+$CMP BR25S_EEPROM
+D ROHM Semiconductor serial EEPROM with SPI interface in 8-pin package
+K serial SPI EEPROM memory external
+F http://www.rohm.com/web/global/products/-/product/BR25G128F-3
+$ENDCMP
+#
+$CMP CAT250_EEPROM
+D ON Semiconductor serial EEPROM with SPI interface in 8-pin package
+K serial EEPROM SPI interface memory external 
+F http://www.onsemi.com/PowerSolutions/product.do?id=CAT25040
+$ENDCMP
+#
+$CMP MX25LXX0X_EEPROM
+D External EEPROM with SPI interface in 8-pin package
+K EEPROM memory SPI serial
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf
+$ENDCMP
+#
+#End Doc Library
