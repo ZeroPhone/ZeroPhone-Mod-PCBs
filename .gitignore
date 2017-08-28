@@ -21,3 +21,7 @@ _autosave-*
 # *.xml
 # *.csv
 Thumbs.db
+
+#Not storing gerber files in repositories anymore
+gerbers/
+gerbers.zip
