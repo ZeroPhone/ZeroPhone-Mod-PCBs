@@ -1,4 +1,4 @@
-update=05-Jul-17 01:33:17
+update=30-Aug-17 00:08:52
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=tp4056_breakout
+LibName31=cp2102n-20p

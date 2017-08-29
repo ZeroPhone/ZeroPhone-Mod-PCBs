@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:tp4056_breakout
+LIBS:cp2102n-20p
 LIBS:tp4056_breakout-cache
 EELAYER 25 0
 EELAYER END
@@ -49,7 +50,7 @@ L CONN_02X04 J2
 U 1 1 595C1143
 P 5150 3750
 F 0 "J2" H 5150 4000 50  0000 C CNN
-F 1 "CONN_02X04" H 5150 3500 50  0000 C CNN
+F 1 "TP4056" H 5150 3500 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5150 2550 50  0001 C CNN
 F 3 "" H 5150 2550 50  0001 C CNN
 	1    5150 3750
@@ -69,12 +70,12 @@ $EndComp
 $Comp
 L USB_OTG J1
 U 1 1 595C1203
-P 3600 2550
-F 0 "J1" H 3400 3000 50  0000 L CNN
-F 1 "USB_OTG" H 3400 2900 50  0000 L CNN
-F 2 "footprints:MICROUSB_SIMPLE" H 3750 2500 50  0001 C CNN
-F 3 "" H 3750 2500 50  0001 C CNN
-	1    3600 2550
+P 3550 1450
+F 0 "J1" H 3350 1900 50  0000 L CNN
+F 1 "USB_OTG" H 3350 1800 50  0000 L CNN
+F 2 "footprints:MICROUSB_SIMPLE" H 3700 1400 50  0001 C CNN
+F 3 "" H 3700 1400 50  0001 C CNN
+	1    3550 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -176,29 +177,27 @@ F 3 "" H 5750 2400 50  0001 C CNN
 	1    5750 2400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3900 2650
-NoConn ~ 3900 2550
-NoConn ~ 3900 2750
+NoConn ~ 3850 1650
 $Comp
 L GND #PWR02
 U 1 1 595C168E
-P 3500 2950
-F 0 "#PWR02" H 3500 2700 50  0001 C CNN
-F 1 "GND" H 3500 2800 50  0000 C CNN
-F 2 "" H 3500 2950 50  0001 C CNN
-F 3 "" H 3500 2950 50  0001 C CNN
-	1    3500 2950
+P 3450 1850
+F 0 "#PWR02" H 3450 1600 50  0001 C CNN
+F 1 "GND" H 3400 1700 50  0000 C CNN
+F 2 "" H 3450 1850 50  0001 C CNN
+F 3 "" H 3450 1850 50  0001 C CNN
+	1    3450 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR03
 U 1 1 595C16C7
-P 3600 2950
-F 0 "#PWR03" H 3600 2700 50  0001 C CNN
-F 1 "GND" H 3600 2800 50  0000 C CNN
-F 2 "" H 3600 2950 50  0001 C CNN
-F 3 "" H 3600 2950 50  0001 C CNN
-	1    3600 2950
+P 3550 1850
+F 0 "#PWR03" H 3550 1600 50  0001 C CNN
+F 1 "GND" H 3600 1700 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -248,13 +247,13 @@ $EndComp
 $Comp
 L +5V #PWR06
 U 1 1 595C216B
-P 3900 2350
-F 0 "#PWR06" H 3900 2200 50  0001 C CNN
-F 1 "+5V" H 3900 2490 50  0000 C CNN
-F 2 "" H 3900 2350 50  0001 C CNN
-F 3 "" H 3900 2350 50  0001 C CNN
-	1    3900 2350
-	0    1    1    0   
+P 3900 1150
+F 0 "#PWR06" H 3900 1000 50  0001 C CNN
+F 1 "+5V" H 3900 1290 50  0000 C CNN
+F 2 "" H 3900 1150 50  0001 C CNN
+F 3 "" H 3900 1150 50  0001 C CNN
+	1    3900 1150
+	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR07
@@ -355,29 +354,6 @@ F 3 "" H 7350 2900 50  0001 C CNN
 	1    7350 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 3600 4900 3600
-Wire Wire Line
-	5400 3600 5500 3600
-Wire Wire Line
-	6850 2400 6600 2400
-Wire Wire Line
-	6600 2400 6600 2500
-Wire Wire Line
-	6600 2500 6400 2500
-Connection ~ 6400 2500
-Wire Wire Line
-	7050 3350 7050 3300
-Wire Wire Line
-	7050 3300 7250 3300
-Wire Wire Line
-	7250 3300 7250 3900
-Wire Wire Line
-	7250 3900 7150 3900
-Wire Wire Line
-	7150 3900 7150 3850
-Wire Wire Line
-	6950 3200 6950 3350
 $Comp
 L GND #PWR016
 U 1 1 595C2A57
@@ -389,25 +365,8 @@ F 3 "" H 6950 3900 50  0001 C CNN
 	1    6950 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 3200 7500 3200
-Wire Wire Line
-	6850 3350 6850 3300
-Wire Wire Line
-	6850 3300 6700 3300
-Wire Wire Line
-	6700 3300 6700 3900
-Wire Wire Line
-	6700 3900 6950 3900
-Wire Wire Line
-	6950 3900 6950 3850
-Connection ~ 6950 3900
-Wire Wire Line
-	7050 3950 7600 3950
-Wire Wire Line
-	7050 3950 7050 3850
 Text Notes 2950 4450 0    60   ~ 0
-The wiring is weird, only because the pin headers don't have their pins aligned the way ICs do - \nthis is the right alignment that corresponds to pin numbers.
+The wiring is weird, only because the pin headers don't have their pins aligned the way ICs do - \nthis is the right alignment that corresponds to pin numbers. Somebody should draw ICs, I guess - \nain't got time for that =)\n
 $Comp
 L TP4056_BREAKOUT U1
 U 1 1 595C2C43
@@ -452,8 +411,6 @@ F 3 "" H 4350 2700 50  0001 C CNN
 	1    4350 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 2400 4350 2500
 $Comp
 L VSS #PWR020
 U 1 1 595C2E3E
@@ -465,12 +422,10 @@ F 3 "" H 4350 2400 50  0001 C CNN
 	1    4350 2400
 	1    0    0    -1  
 $EndComp
-Connection ~ 4350 2400
 Text GLabel 7250 3500 2    60   Input ~ 0
 BAT-
 Text GLabel 4350 2600 0    60   Input ~ 0
 BAT-
-Connection ~ 7250 3500
 $Comp
 L R R5
 U 1 1 595C12FA
@@ -482,19 +437,266 @@ F 3 "" H 7200 2900 50  0001 C CNN
 	1    7200 2900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7050 2400 7600 2400
-Wire Wire Line
-	7600 2400 7600 3950
 Text GLabel 6400 2800 3    60   Input ~ 0
 BAT-
 NoConn ~ 6950 2900
 Text GLabel 6850 2900 0    60   Input ~ 0
 BAT-
+$Comp
+L GND #PWR021
+U 1 1 59A5E3A9
+P 4450 900
+F 0 "#PWR021" H 4450 650 50  0001 C CNN
+F 1 "GND" V 4450 700 50  0000 C CNN
+F 2 "" H 4450 900 50  0001 C CNN
+F 3 "" H 4450 900 50  0001 C CNN
+	1    4450 900 
+	0    1    1    0   
+$EndComp
+NoConn ~ 5900 1300
+NoConn ~ 5900 1650
+NoConn ~ 5900 1550
+NoConn ~ 5900 1450
+NoConn ~ 5900 950 
+NoConn ~ 5900 850 
+Text GLabel 6000 1050 2    60   Input ~ 0
+TX_LED
+Text GLabel 6000 1150 2    60   Input ~ 0
+RX_LED
+Text GLabel 4300 1750 0    60   Input ~ 0
+RXD
+Text GLabel 4300 1850 0    60   Input ~ 0
+TXD
+$Comp
+L C_Small C5
+U 1 1 59A5FAA6
+P 4500 1050
+F 0 "C5" H 4350 1050 50  0000 L CNN
+F 1 "100nF" V 4600 950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4500 1050 50  0001 C CNN
+F 3 "" H 4500 1050 50  0001 C CNN
+	1    4500 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 3600 4900 3600
+Wire Wire Line
+	5400 3600 5500 3600
+Wire Wire Line
+	6850 2400 6600 2400
+Wire Wire Line
+	6600 2400 6600 2500
+Wire Wire Line
+	6600 2500 6400 2500
+Connection ~ 6400 2500
+Wire Wire Line
+	7050 3350 7050 3300
+Wire Wire Line
+	7050 3300 7250 3300
+Wire Wire Line
+	7250 3300 7250 3900
+Wire Wire Line
+	7250 3900 7150 3900
+Wire Wire Line
+	7150 3900 7150 3850
+Wire Wire Line
+	6950 3200 6950 3350
+Wire Wire Line
+	6950 3200 7500 3200
+Wire Wire Line
+	6850 3350 6850 3300
+Wire Wire Line
+	6850 3300 6700 3300
+Wire Wire Line
+	6700 3300 6700 3900
+Wire Wire Line
+	6700 3900 6950 3900
+Wire Wire Line
+	6950 3900 6950 3850
+Connection ~ 6950 3900
+Wire Wire Line
+	7050 3950 7600 3950
+Wire Wire Line
+	7050 3950 7050 3850
+Wire Wire Line
+	4350 2400 4350 2500
+Connection ~ 4350 2400
+Connection ~ 7250 3500
+Wire Wire Line
+	7050 2400 7600 2400
+Wire Wire Line
+	7600 2400 7600 3950
 Wire Wire Line
 	6950 2400 6950 2300
 Wire Wire Line
 	6950 2300 7500 2300
 Wire Wire Line
 	7500 2300 7500 3200
+Wire Wire Line
+	3850 1450 4250 1450
+Wire Wire Line
+	4250 1450 4250 1500
+Wire Wire Line
+	4250 1500 4600 1500
+Wire Wire Line
+	3850 1550 4200 1550
+Wire Wire Line
+	4200 1550 4200 1600
+Wire Wire Line
+	4200 1600 4600 1600
+Wire Wire Line
+	4400 1350 4600 1350
+Wire Wire Line
+	4600 800  4550 800 
+Wire Wire Line
+	4550 800  4550 1000
+Wire Wire Line
+	4550 1000 4600 1000
+Wire Wire Line
+	4450 900  4600 900 
+Connection ~ 4550 900 
+Wire Wire Line
+	5900 1050 6000 1050
+Wire Wire Line
+	5900 1150 6000 1150
+Wire Wire Line
+	4300 1750 4400 1750
+Wire Wire Line
+	4400 1750 4400 1700
+Wire Wire Line
+	4400 1700 4600 1700
+Wire Wire Line
+	4300 1850 4450 1850
+Wire Wire Line
+	4450 1850 4450 1800
+Wire Wire Line
+	4450 1800 4600 1800
+Wire Wire Line
+	3850 1250 4600 1250
+Wire Wire Line
+	4400 1350 4400 1250
+Connection ~ 4400 1250
+Wire Wire Line
+	4500 1150 4600 1150
+Wire Wire Line
+	4500 950  4500 900 
+Connection ~ 4500 900 
+$Comp
+L C_Small C4
+U 1 1 59A5FD31
+P 4150 1100
+F 0 "C4" H 4000 1100 50  0000 L CNN
+F 1 "100nF" V 4250 950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4150 1100 50  0001 C CNN
+F 3 "" H 4150 1100 50  0001 C CNN
+	1    4150 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1150 3900 1250
+Connection ~ 3900 1250
+$Comp
+L GND #PWR022
+U 1 1 59A5FF0F
+P 4150 1000
+F 0 "#PWR022" H 4150 750 50  0001 C CNN
+F 1 "GND" H 4200 850 50  0000 C CNN
+F 2 "" H 4150 1000 50  0001 C CNN
+F 3 "" H 4150 1000 50  0001 C CNN
+	1    4150 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 1200 4150 1250
+Connection ~ 4150 1250
+$Comp
+L R_Pack04 RN1
+U 1 1 59A60184
+P 2700 1400
+F 0 "RN1" V 2400 1400 50  0000 C CNN
+F 1 "R_Pack04" V 2900 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Concave_4x0402" V 2975 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0001 C CNN
+	1    2700 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1600 3    60   Input ~ 0
+RX_LED
+Text GLabel 2500 1600 3    60   Input ~ 0
+TX_LED
+$Comp
+L CP2102N-20P U2
+U 1 1 59A5DDC3
+P 5200 1350
+F 0 "U2" H 4850 800 60  0000 C CNN
+F 1 "CP2102N-20P" H 5100 2000 60  0000 C CNN
+F 2 "CP2102N_QFN20:QFN-20-1EP_3x3mm_Pitch0.5" H 5200 1350 60  0001 C CNN
+F 3 "" H 5200 1350 60  0001 C CNN
+	1    5200 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 1750 2    60   Input ~ 0
+RST
+Text GLabel 2800 1600 3    60   Input ~ 0
+RST
+Text Label 4550 1150 0    60   ~ 0
+VDD
+Text GLabel 2800 1200 1    60   Input ~ 0
+VDD
+$Comp
+L LED D4
+U 1 1 59A60765
+P 2200 1100
+F 0 "D4" H 2200 1200 50  0000 C CNN
+F 1 "LED" H 2200 1000 50  0000 C CNN
+F 2 "Diodes_SMD:D_0603" H 2200 1100 50  0001 C CNN
+F 3 "" H 2200 1100 50  0001 C CNN
+	1    2200 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D3
+U 1 1 59A607FE
+P 2200 800
+F 0 "D3" H 2200 900 50  0000 C CNN
+F 1 "LED" H 2200 700 50  0000 C CNN
+F 2 "Diodes_SMD:D_0603" H 2200 800 50  0001 C CNN
+F 3 "" H 2200 800 50  0001 C CNN
+	1    2200 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 800  2600 800 
+Wire Wire Line
+	2600 800  2600 1200
+Wire Wire Line
+	2350 1100 2500 1100
+Wire Wire Line
+	2500 1100 2500 1200
+$Comp
+L +5V #PWR023
+U 1 1 59A6093E
+P 2050 800
+F 0 "#PWR023" H 2050 650 50  0001 C CNN
+F 1 "+5V" V 2100 950 50  0000 C CNN
+F 2 "" H 2050 800 50  0001 C CNN
+F 3 "" H 2050 800 50  0001 C CNN
+	1    2050 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR024
+U 1 1 59A609D1
+P 2050 1100
+F 0 "#PWR024" H 2050 950 50  0001 C CNN
+F 1 "+5V" V 2100 1250 50  0000 C CNN
+F 2 "" H 2050 1100 50  0001 C CNN
+F 3 "" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5100 2050
+NoConn ~ 5200 2050
+NoConn ~ 2700 1200
+NoConn ~ 2700 1600
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name footprints)(type KiCad)(uri C:/Users/Samsung/Documents/KiCad/ZeroPhone-Mod-PCBs/common_libs/footprints.pretty)(options "")(descr ""))
   (lib (name tp4056_usb_board)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name CP2102N_QFN20)(type KiCad)(uri "$(KIPRJMOD)/CP2102N_QFN20.pretty")(options "")(descr ""))
 )
