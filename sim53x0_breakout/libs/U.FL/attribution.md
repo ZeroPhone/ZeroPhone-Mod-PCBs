@@ -1,0 +1,1 @@
+"[kicad-libraries](https://github.com/Tinkerforge/kicad-libraries)" by [Tinkerforge](http://www.tinkerforge.com/) is licensed under [CERN OHL V1.1](https://raw.githubusercontent.com/Tinkerforge/kicad-libraries/master/LICENSE.txt)

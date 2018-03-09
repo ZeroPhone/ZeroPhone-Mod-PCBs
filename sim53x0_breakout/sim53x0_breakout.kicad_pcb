@@ -381,6 +381,11 @@
       (net 2 GND))
     (pad 82 smd rect (at 15.1 10.5 270) (size 1.8 0.6) (layers F.Cu F.Paste F.Mask)
       (net 17 /DIV_ANT))
+    (model ${KIPRJMOD}/libs/SIM5320/SIM5320.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitors_SMD:C_0402_NoSilk (layer F.Cu) (tedit 59AEB58D) (tstamp 59AA0D04)
@@ -772,6 +777,11 @@
       (net 2 GND) (zone_connect 2))
     (pad 1 smd rect (at 0 1.55 90) (size 1.05 1.1) (layers F.Cu F.Paste F.Mask)
       (net 4 "Net-(C9-Pad1)") (zone_connect 2))
+    (model ${KIPRJMOD}/libs/U.FL/U-FL_CON.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module "footprints:HRS_U.FL-R-SMT(01)" (layer F.Cu) (tedit 59AA24CA) (tstamp 59AA2608)
@@ -815,6 +825,11 @@
       (net 2 GND) (zone_connect 2))
     (pad 1 smd rect (at 0 1.55 270) (size 1.05 1.1) (layers F.Cu F.Paste F.Mask)
       (net 5 "Net-(C10-Pad1)") (zone_connect 2))
+    (model ${KIPRJMOD}/libs/U.FL/U-FL_CON.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module "footprints:HRS_U.FL-R-SMT(01)" (layer F.Cu) (tedit 5AA2A351) (tstamp 59AA25FA)
@@ -858,6 +873,11 @@
       (net 2 GND) (zone_connect 2))
     (pad 1 smd rect (at 0 1.55 270) (size 1.05 1.1) (layers F.Cu F.Paste F.Mask)
       (net 1 "Net-(C1-Pad1)") (zone_connect 2))
+    (model ${KIPRJMOD}/libs/U.FL/U-FL_CON.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm (layer F.Cu) (tedit 5AA2B71C) (tstamp 5AA17355)
