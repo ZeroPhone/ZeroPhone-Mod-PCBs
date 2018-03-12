@@ -1,4 +1,4 @@
-update=02-Sep-17 03:55:18
+update=12-Mar-18 19:44:20
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=libs/sim5320
+LibName31=C:/Users/Samsung/Documents/KiCad/ZeroPhone-Mod-PCBs/common_libs/sim_card
