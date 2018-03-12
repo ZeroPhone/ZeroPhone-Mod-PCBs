@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:tp4056_breakout-rescue
+LIBS:tp4056_usb_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:tp4056_breakout
 LIBS:cp2102n-20p
-LIBS:tp4056_breakout-cache
+LIBS:tp4056_usb_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -129,7 +129,7 @@ U 1 1 595C13F7
 P 5850 3800
 F 0 "D2" H 5850 3900 50  0000 C CNN
 F 1 "LED" H 5850 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5850 3800 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 5850 3800 50  0001 C CNN
 F 3 "" H 5850 3800 50  0001 C CNN
 	1    5850 3800
 	1    0    0    -1  
@@ -151,7 +151,7 @@ U 1 1 595C14A9
 P 4450 3900
 F 0 "D1" H 4450 4000 50  0000 C CNN
 F 1 "LED" H 4450 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4450 3900 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 4450 3900 50  0001 C CNN
 F 3 "" H 4450 3900 50  0001 C CNN
 	1    4450 3900
 	-1   0    0    1   
@@ -650,7 +650,7 @@ U 1 1 59A60765
 P 2200 800
 F 0 "D4" H 2200 900 50  0000 C CNN
 F 1 "LED" H 2200 700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 2200 800 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 2200 800 50  0001 C CNN
 F 3 "" H 2200 800 50  0001 C CNN
 	1    2200 800 
 	-1   0    0    1   
@@ -661,7 +661,7 @@ U 1 1 59A607FE
 P 3100 800
 F 0 "D3" H 3100 900 50  0000 C CNN
 F 1 "LED" H 3100 700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 3100 800 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 3100 800 50  0001 C CNN
 F 3 "" H 3100 800 50  0001 C CNN
 	1    3100 800 
 	1    0    0    -1  
@@ -715,4 +715,6 @@ Wire Wire Line
 	2800 800  2800 1200
 Wire Wire Line
 	2700 800  2700 1200
+NoConn ~ 7150 3350
+NoConn ~ 6850 3850
 $EndSCHEMATC

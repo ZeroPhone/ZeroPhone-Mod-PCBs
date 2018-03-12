@@ -29,7 +29,7 @@ version=1
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=tp4056_breakout-rescue
+LibName1=tp4056_usb_board-rescue
 LibName2=power
 LibName3=device
 LibName4=transistors
