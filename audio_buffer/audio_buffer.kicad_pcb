@@ -1,11 +1,11 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 17)
-    (no_connects 7)
-    (area 121.514286 90.615 141.979048 105.831428)
+    (no_connects 0)
+    (area 125.400999 92.380999 138.759001 103.199001)
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 47)
     (zones 0)
     (modules 9)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 0.8)
@@ -423,6 +423,9 @@
     )
   )
 
+  (gr_text v1.1 (at 132 101.6) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_line (start 125.476 103.124) (end 125.476 92.456) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 138.684 103.124) (end 125.476 103.124) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 138.684 92.456) (end 138.684 103.124) (layer Edge.Cuts) (width 0.15))
