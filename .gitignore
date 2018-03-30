@@ -25,3 +25,14 @@ Thumbs.db
 #Not storing gerber files in repositories anymore
 gerbers/
 gerbers.zip
+*.gbl
+*.gko
+*.gml
+*.gm1
+*.gtl
+*.gts
+*.gto
+*.drl
+*.gto
+*.gbo
+*.gbs
