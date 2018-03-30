@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 16)
@@ -6,7 +6,7 @@
     (area 139.8011 92.728599 157.2011 117.7036)
     (thickness 1.6)
     (drawings 0)
-    (tracks 0)
+    (tracks 16)
     (zones 0)
     (modules 1)
     (nets 17)
@@ -222,5 +222,22 @@
     (pad 22 thru_hole rect (at 7 -3.5) (size 1 1) (drill 0.6) (layers *.Cu *.Mask)
       (net 14 "Net-(U1-Pad22)"))
   )
+
+  (segment (start 140.5011 101.5036) (end 141.5011 101.5036) (width 0.25) (layer F.Cu) (net 1))
+  (segment (start 140.5011 103.5036) (end 141.5011 103.5036) (width 0.25) (layer F.Cu) (net 2))
+  (segment (start 140.5011 105.5036) (end 141.5011 105.5036) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 140.5011 107.5036) (end 141.5011 107.5036) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 140.5011 109.5036) (end 141.5011 109.5036) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 140.5011 111.5036) (end 141.5011 111.5036) (width 0.25) (layer F.Cu) (net 6))
+  (segment (start 141.5011 113.5036) (end 140.5011 113.5036) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 156.5011 113.5036) (end 155.5011 113.5036) (width 0.25) (layer F.Cu) (net 8))
+  (segment (start 156.5011 111.5036) (end 155.5011 111.5036) (width 0.25) (layer F.Cu) (net 9))
+  (segment (start 156.5011 109.5036) (end 155.5011 109.5036) (width 0.25) (layer F.Cu) (net 10))
+  (segment (start 155.5011 107.5036) (end 156.5011 107.5036) (width 0.25) (layer F.Cu) (net 11))
+  (segment (start 156.5011 105.5036) (end 155.5011 105.5036) (width 0.25) (layer F.Cu) (net 12))
+  (segment (start 155.5011 103.5036) (end 156.5011 103.5036) (width 0.25) (layer F.Cu) (net 13))
+  (segment (start 156.5011 101.5036) (end 155.5011 101.5036) (width 0.25) (layer F.Cu) (net 14))
+  (segment (start 141.5011 115.5036) (end 140.5011 115.5036) (width 0.25) (layer F.Cu) (net 15))
+  (segment (start 156.5011 115.5036) (end 155.5011 115.5036) (width 0.25) (layer F.Cu) (net 16))
 
 )
