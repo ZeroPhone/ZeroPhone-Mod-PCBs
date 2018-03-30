@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:ESP8266
+LIBS:esp12_atmega_addon-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -181,7 +182,7 @@ Wire Wire Line
 	1600 2700 1600 2750
 Text GLabel 5750 3450 3    60   Input ~ 0
 RST
-Text GLabel 5850 3450 3    60   Input ~ 0
+Text GLabel 5950 3450 3    60   Input ~ 0
 MISO
 Text GLabel 6150 3450 3    60   Input ~ 0
 MOSI
@@ -209,7 +210,7 @@ Text GLabel 6050 3450 3    60   Input ~ 0
 CS
 Text GLabel 3750 2200 2    60   Input ~ 0
 PB1
-Text GLabel 5950 3450 3    60   Input ~ 0
+Text GLabel 5850 3450 3    60   Input ~ 0
 PB1
 Text GLabel 3750 3900 2    60   Input ~ 0
 INT
