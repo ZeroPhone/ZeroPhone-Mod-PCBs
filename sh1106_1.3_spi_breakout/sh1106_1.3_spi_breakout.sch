@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:sh1106_1.3_spi_breakout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:sh1106_1.3_spi_display-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,14 +44,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X30 J2
+L Conn_01x30 J2
 U 1 1 59933012
-P 5550 3550
-F 0 "J2" H 5550 5100 50  0000 C CNN
-F 1 "OLED_PANEL" V 5650 3550 50  0000 C CNN
-F 2 "libs:FPC_30" H 5550 3550 50  0001 C CNN
-F 3 "" H 5550 3550 50  0001 C CNN
-	1    5550 3550
+P 5550 3500
+F 0 "J2" H 5550 5050 50  0000 C CNN
+F 1 "OLED_PANEL" V 5650 3500 50  0000 C CNN
+F 2 "libs:FPC_30" H 5550 3500 50  0001 C CNN
+F 3 "" H 5550 3500 50  0001 C CNN
+	1    5550 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -391,7 +391,7 @@ F 3 "" H 3850 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X06 J1
+L Conn_01x06 J1
 U 1 1 5993459F
 P 2650 3550
 F 0 "J1" H 2650 3900 50  0000 C CNN
@@ -404,21 +404,21 @@ $EndComp
 $Comp
 L GND #PWR015
 U 1 1 599345E6
-P 2450 3400
-F 0 "#PWR015" H 2450 3150 50  0001 C CNN
-F 1 "GND" V 2450 3200 50  0000 C CNN
-F 2 "" H 2450 3400 50  0001 C CNN
-F 3 "" H 2450 3400 50  0001 C CNN
-	1    2450 3400
+P 2450 3450
+F 0 "#PWR015" H 2450 3200 50  0001 C CNN
+F 1 "GND" V 2450 3250 50  0000 C CNN
+F 2 "" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0001 C CNN
+	1    2450 3450
 	0    1    1    0   
 $EndComp
-Text GLabel 2450 3500 0    60   Input ~ 0
+Text GLabel 2450 3550 0    60   Input ~ 0
 CLK
-Text GLabel 2450 3600 0    60   Input ~ 0
+Text GLabel 2450 3650 0    60   Input ~ 0
 MOSI
-Text GLabel 2450 3700 0    60   Input ~ 0
+Text GLabel 2450 3750 0    60   Input ~ 0
 CS
-Text GLabel 2450 3800 0    60   Input ~ 0
+Text GLabel 2450 3850 0    60   Input ~ 0
 DC
 $Comp
 L GND #PWR016
@@ -823,12 +823,12 @@ Wire Wire Line
 $Comp
 L VCC #PWR037
 U 1 1 59961EEB
-P 2450 3300
-F 0 "#PWR037" H 2450 3150 50  0001 C CNN
-F 1 "VCC" V 2450 3500 50  0000 C CNN
-F 2 "" H 2450 3300 50  0001 C CNN
-F 3 "" H 2450 3300 50  0001 C CNN
-	1    2450 3300
+P 2450 3350
+F 0 "#PWR037" H 2450 3200 50  0001 C CNN
+F 1 "VCC" V 2450 3550 50  0000 C CNN
+F 2 "" H 2450 3350 50  0001 C CNN
+F 3 "" H 2450 3350 50  0001 C CNN
+	1    2450 3350
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
