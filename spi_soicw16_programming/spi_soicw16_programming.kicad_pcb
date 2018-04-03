@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 10)
@@ -63,7 +63,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 160 95.25)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions true)
@@ -192,9 +192,9 @@
     (pad 6 thru_hole oval (at 0 12.7 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
     (model Pin_Headers.3dshapes/Pin_Header_Angled_1x06_Pitch2.54mm.wrl
-      (at (xyz 0 -0.25 0))
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
