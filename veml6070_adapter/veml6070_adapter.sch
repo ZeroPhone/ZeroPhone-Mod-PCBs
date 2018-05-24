@@ -1,0 +1,256 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:veml6070
+LIBS:veml6070_adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VEML6070 U1
+U 1 1 5AEED48C
+P 5000 3650
+F 0 "U1" H 4700 3300 60  0000 C CNN
+F 1 "VEML6070" H 4850 4000 60  0000 C CNN
+F 2 "footprints:OLPGA-6-2.35x1.8" H 5000 3650 60  0001 C CNN
+F 3 "" H 5000 3650 60  0001 C CNN
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x05 J1
+U 1 1 5AEED4CC
+P 6600 3650
+F 0 "J1" H 6600 3950 50  0000 C CNN
+F 1 "Conn_01x05" H 6600 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 6600 3650 50  0001 C CNN
+F 3 "" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5AEED4F7
+P 6400 3450
+F 0 "#PWR01" H 6400 3300 50  0001 C CNN
+F 1 "VCC" V 6400 3650 50  0000 C CNN
+F 2 "" H 6400 3450 50  0001 C CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5AEED52F
+P 5500 3500
+F 0 "#PWR02" H 5500 3350 50  0001 C CNN
+F 1 "VCC" V 5500 3700 50  0000 C CNN
+F 2 "" H 5500 3500 50  0001 C CNN
+F 3 "" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5AEED540
+P 6400 3850
+F 0 "#PWR03" H 6400 3600 50  0001 C CNN
+F 1 "GND" V 6400 3650 50  0000 C CNN
+F 2 "" H 6400 3850 50  0001 C CNN
+F 3 "" H 6400 3850 50  0001 C CNN
+	1    6400 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AEED578
+P 4500 3500
+F 0 "#PWR04" H 4500 3250 50  0001 C CNN
+F 1 "GND" V 4500 3300 50  0000 C CNN
+F 2 "" H 4500 3500 50  0001 C CNN
+F 3 "" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 5AEED58F
+P 4400 3650
+F 0 "JP1" H 4400 3730 50  0000 C CNN
+F 1 "IRQ" H 4410 3590 50  0000 C CNN
+F 2 "Connect:GS2" H 4400 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 3800 0    60   Input ~ 0
+SDA
+Text GLabel 6400 3550 0    60   Input ~ 0
+SDA
+Text GLabel 5500 3650 2    60   Input ~ 0
+SCL
+Text GLabel 6400 3650 0    60   Input ~ 0
+SCL
+Text GLabel 4300 3650 0    60   Input ~ 0
+INT
+Text GLabel 6400 3750 0    60   Input ~ 0
+INT
+$Comp
+L R_Small R2
+U 1 1 5AEED63F
+P 5600 3800
+F 0 "R2" V 5600 3750 50  0000 L CNN
+F 1 "300K" V 5550 3650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AEED67C
+P 5700 3800
+F 0 "#PWR05" H 5700 3550 50  0001 C CNN
+F 1 "GND" V 5700 3600 50  0000 C CNN
+F 2 "" H 5700 3800 50  0001 C CNN
+F 3 "" H 5700 3800 50  0001 C CNN
+	1    5700 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5AEED6E4
+P 5600 3150
+F 0 "C1" H 5610 3220 50  0000 L CNN
+F 1 "100nF" H 5610 3070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5600 3150 50  0001 C CNN
+F 3 "" H 5600 3150 50  0001 C CNN
+	1    5600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5AEED72C
+P 5600 3250
+F 0 "#PWR06" H 5600 3000 50  0001 C CNN
+F 1 "GND" H 5600 3100 50  0000 C CNN
+F 2 "" H 5600 3250 50  0001 C CNN
+F 3 "" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 5AEED74A
+P 5600 3050
+F 0 "#PWR07" H 5600 2900 50  0001 C CNN
+F 1 "VCC" H 5600 3200 50  0000 C CNN
+F 2 "" H 5600 3050 50  0001 C CNN
+F 3 "" H 5600 3050 50  0001 C CNN
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5AEED7A2
+P 4900 4150
+F 0 "R1" V 4900 4100 50  0000 L CNN
+F 1 "10K" V 4850 4000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4900 4150 50  0001 C CNN
+F 3 "" H 4900 4150 50  0001 C CNN
+	1    4900 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 5AEED827
+P 5000 4150
+F 0 "#PWR08" H 5000 4000 50  0001 C CNN
+F 1 "VCC" V 5000 4350 50  0000 C CNN
+F 2 "" H 5000 4150 50  0001 C CNN
+F 3 "" H 5000 4150 50  0001 C CNN
+	1    5000 4150
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 3650
+$Comp
+L C_Small C2
+U 1 1 5AEEDAC7
+P 5950 3150
+F 0 "C2" H 5960 3220 50  0000 L CNN
+F 1 "10uF" H 5960 3070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5950 3150 50  0001 C CNN
+F 3 "" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5AEEDAF8
+P 5950 3250
+F 0 "#PWR09" H 5950 3000 50  0001 C CNN
+F 1 "GND" H 5950 3100 50  0000 C CNN
+F 2 "" H 5950 3250 50  0001 C CNN
+F 3 "" H 5950 3250 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 5AEEDB18
+P 5950 3050
+F 0 "#PWR010" H 5950 2900 50  0001 C CNN
+F 1 "VCC" H 5950 3200 50  0000 C CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3650 4600 3650
+Wire Wire Line
+	4600 3650 4600 4150
+Wire Wire Line
+	4600 4150 4800 4150
+$EndSCHEMATC
