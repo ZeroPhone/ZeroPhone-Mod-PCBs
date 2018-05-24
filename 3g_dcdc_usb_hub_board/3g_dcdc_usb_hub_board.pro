@@ -1,4 +1,4 @@
-update=26-Apr-18 06:50:56
+update=21-May-18 04:21:38
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=3g_dcdc_usb_hub_board
 LibName31=C:/Users/Samsung/Documents/KiCad/ZeroPhone-Mod-PCBs/common_libs/gl850g
+LibName32=C:/Users/Samsung/Documents/KiCad/ZeroPhone-Mod-PCBs/3g_dcdc_usb_hub_board_fe11s/fe11s
