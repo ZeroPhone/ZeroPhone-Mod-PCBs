@@ -1,0 +1,230 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:attinyx5_programming-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_Small C1
+U 1 1 590E7763
+P 5100 3150
+F 0 "C1" H 5110 3220 50  0000 L CNN
+F 1 "C_Small" H 5110 3070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5100 3150 50  0001 C CNN
+F 3 "" H 5100 3150 50  0000 C CNN
+	1    5100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P2
+U 1 1 590E7860
+P 6050 3200
+F 0 "P2" H 6050 3550 50  0000 C CNN
+F 1 "CONN_01X06" V 6150 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 6050 3200 50  0001 C CNN
+F 3 "" H 6050 3200 50  0000 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR7
+U 1 1 590E98A4
+P 5850 3350
+F 0 "#PWR7" H 5850 3200 50  0001 C CNN
+F 1 "+3.3V" V 5850 3600 50  0000 C CNN
+F 2 "" H 5850 3350 50  0000 C CNN
+F 3 "" H 5850 3350 50  0000 C CNN
+	1    5850 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 590E98E4
+P 5850 3450
+F 0 "#PWR8" H 5850 3200 50  0001 C CNN
+F 1 "GND" V 5850 3250 50  0000 C CNN
+F 2 "" H 5850 3450 50  0000 C CNN
+F 3 "" H 5850 3450 50  0000 C CNN
+	1    5850 3450
+	0    1    1    0   
+$EndComp
+Text GLabel 5850 2950 0    60   Input ~ 0
+MOSI
+Text GLabel 5850 3050 0    60   Input ~ 0
+MISO
+Text GLabel 5850 3150 0    60   Input ~ 0
+CLK
+Text GLabel 5850 3250 0    60   Input ~ 0
+CS
+$Comp
+L +3.3V #PWR5
+U 1 1 590E9977
+P 5100 3050
+F 0 "#PWR5" H 5100 2900 50  0001 C CNN
+F 1 "+3.3V" H 5100 3200 50  0000 C CNN
+F 2 "" H 5100 3050 50  0000 C CNN
+F 3 "" H 5100 3050 50  0000 C CNN
+	1    5100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 590E99A1
+P 5100 3250
+F 0 "#PWR6" H 5100 3000 50  0001 C CNN
+F 1 "GND" H 5100 3100 50  0000 C CNN
+F 2 "" H 5100 3250 50  0000 C CNN
+F 3 "" H 5100 3250 50  0000 C CNN
+	1    5100 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 3400 0    60   Input ~ 0
+CS
+Text GLabel 1750 3100 0    60   Input ~ 0
+CLK
+Text GLabel 1750 2900 0    60   Input ~ 0
+MOSI
+Text GLabel 1750 3000 0    60   Input ~ 0
+MISO
+$Comp
+L ATTINY85-20SU U1
+U 1 1 5AEEE14E
+P 3100 3150
+F 0 "U1" H 1950 3550 50  0000 C CNN
+F 1 "ATTINY85-20SU" H 4100 2750 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4050 3150 50  0001 C CIN
+F 3 "" H 3100 3150 50  0001 C CNN
+	1    3100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR3
+U 1 1 5AEEE196
+P 4450 2900
+F 0 "#PWR3" H 4450 2750 50  0001 C CNN
+F 1 "+3.3V" V 4450 3150 50  0000 C CNN
+F 2 "" H 4450 2900 50  0000 C CNN
+F 3 "" H 4450 2900 50  0000 C CNN
+	1    4450 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5AEEE2B5
+P 1250 3250
+F 0 "Y1" H 1250 3400 50  0000 C CNN
+F 1 "Crystal" H 1250 3100 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 1250 3250 50  0001 C CNN
+F 3 "" H 1250 3250 50  0001 C CNN
+	1    1250 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5AEEE2F8
+P 900 3100
+F 0 "C2" H 910 3170 50  0000 L CNN
+F 1 "C_Small" H 910 3020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 900 3100 50  0001 C CNN
+F 3 "" H 900 3100 50  0001 C CNN
+	1    900  3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5AEEE332
+P 900 3400
+F 0 "C3" H 910 3470 50  0000 L CNN
+F 1 "C_Small" H 910 3320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 900 3400 50  0001 C CNN
+F 3 "" H 900 3400 50  0001 C CNN
+	1    900  3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5AEEE3AC
+P 800 3100
+F 0 "#PWR1" H 800 2850 50  0001 C CNN
+F 1 "GND" V 800 2900 50  0000 C CNN
+F 2 "" H 800 3100 50  0000 C CNN
+F 3 "" H 800 3100 50  0000 C CNN
+	1    800  3100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5AEEE3DB
+P 800 3400
+F 0 "#PWR2" H 800 3150 50  0001 C CNN
+F 1 "GND" V 800 3200 50  0000 C CNN
+F 2 "" H 800 3400 50  0000 C CNN
+F 3 "" H 800 3400 50  0000 C CNN
+	1    800  3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 3100 1450 3100
+Wire Wire Line
+	1450 3100 1450 3200
+Wire Wire Line
+	1450 3200 1750 3200
+Wire Wire Line
+	1000 3400 1450 3400
+Wire Wire Line
+	1450 3400 1450 3300
+Wire Wire Line
+	1450 3300 1750 3300
+Connection ~ 1250 3100
+Connection ~ 1250 3400
+$Comp
+L GND #PWR4
+U 1 1 5AEEE46E
+P 4450 3400
+F 0 "#PWR4" H 4450 3150 50  0001 C CNN
+F 1 "GND" V 4450 3200 50  0000 C CNN
+F 2 "" H 4450 3400 50  0000 C CNN
+F 3 "" H 4450 3400 50  0000 C CNN
+	1    4450 3400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
