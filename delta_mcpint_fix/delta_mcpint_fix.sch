@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC857 Q1
+U 1 1 5BCBC7E3
+P 4800 3450
+F 0 "Q1" H 5000 3525 50  0000 L CNN
+F 1 "BC857" H 5000 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5000 3375 50  0001 L CIN
+F 3 "" H 4800 3450 50  0001 L CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5BCBC840
+P 4500 3450
+F 0 "R1" V 4600 3400 50  0000 L CNN
+F 1 "1K8" V 4400 3500 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4500 3450 50  0001 C CNN
+F 3 "" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5BCBC897
+P 4900 3650
+F 0 "#PWR3" H 4900 3400 50  0001 C CNN
+F 1 "GND" H 4900 3500 50  0000 C CNN
+F 2 "" H 4900 3650 50  0001 C CNN
+F 3 "" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5BCBC8AF
+P 4350 3300
+F 0 "R2" H 4380 3320 50  0000 L CNN
+F 1 "10K" H 4380 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4350 3300 50  0001 C CNN
+F 3 "" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 5BCBC8FE
+P 4150 3450
+F 0 "TP2" V 4300 3550 50  0000 C BNN
+F 1 "IN" V 4050 3550 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4150 3450 50  0001 C CNN
+F 3 "" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP3
+U 1 1 5BCBC98C
+P 5300 3150
+F 0 "TP3" V 5400 3200 50  0000 C BNN
+F 1 "OUT" V 5200 3250 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 5300 3150 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 3150 5300 3150
+$Comp
+L VCC #PWR1
+U 1 1 5BCBC9EB
+P 4350 3200
+F 0 "#PWR1" H 4350 3050 50  0001 C CNN
+F 1 "VCC" H 4350 3350 50  0000 C CNN
+F 2 "" H 4350 3200 50  0001 C CNN
+F 3 "" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP1
+U 1 1 5BCBCA0C
+P 4400 2900
+F 0 "TP1" V 4550 3100 50  0000 C BNN
+F 1 "VCC" V 4300 3000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4400 2900 50  0001 C CNN
+F 3 "" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 5BCBCA42
+P 4400 2900
+F 0 "#PWR2" H 4400 2750 50  0001 C CNN
+F 1 "VCC" H 4400 3050 50  0000 C CNN
+F 2 "" H 4400 2900 50  0001 C CNN
+F 3 "" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5BCBCA94
+P 6100 3550
+F 0 "#PWR4" H 6100 3300 50  0001 C CNN
+F 1 "GND" H 6100 3400 50  0000 C CNN
+F 2 "" H 6100 3550 50  0001 C CNN
+F 3 "" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP4
+U 1 1 5BCBCAB1
+P 6100 3550
+F 0 "TP4" V 6150 3850 50  0000 C BNN
+F 1 "GND" V 6150 4000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6100 3550 50  0001 C CNN
+F 3 "" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3250 4900 3150
+Wire Wire Line
+	4150 3450 4400 3450
+Wire Wire Line
+	4350 3400 4350 3450
+Connection ~ 4350 3450
+$Comp
+L TEST TP5
+U 1 1 5BCBCCDB
+P 6100 3550
+F 0 "TP5" V 6100 3850 50  0000 C BNN
+F 1 "GND" V 6050 4000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6100 3550 50  0001 C CNN
+F 3 "" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 6100 3550
+$Comp
+L TEST TP6
+U 1 1 5BCBCE97
+P 6100 3450
+F 0 "TP6" V 6150 3750 50  0000 C BNN
+F 1 "GND" V 6150 3900 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6100 3450 50  0001 C CNN
+F 3 "" H 6100 3450 50  0001 C CNN
+	1    6100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST TP7
+U 1 1 5BCBCECA
+P 6100 3450
+F 0 "TP7" V 6100 3750 50  0000 C BNN
+F 1 "GND" V 6050 3900 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6100 3450 50  0001 C CNN
+F 3 "" H 6100 3450 50  0001 C CNN
+	1    6100 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3450 6100 3550
+Connection ~ 6100 3450
+$EndSCHEMATC
