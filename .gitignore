@@ -38,3 +38,4 @@ gerbers.zip
 *.gbs
 *.pos
 osd3358_cpu_board/pocketbeagle/
+*.zip
